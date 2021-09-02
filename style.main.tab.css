@@ -1,0 +1,180 @@
+@media screen and (max-width: 1190px) {
+  .bottom .upper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottom .upper .left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .bottom .upper .right {
+    width: 100%;
+    height: 500px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .bottom .upper .right .r_left {
+    width: 30% !important;
+    padding: 50px;
+  }
+  .bottom .upper .right .r_right {
+    padding: 50px;
+    width: 55% !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .bottom .upper .right .r_right .txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bottom .upper .right .r_right .txt h3,
+  .bottom .upper .right .r_right .txt p {
+    text-align: center !important;
+  }
+  .bottom .upper .right .r_right .txt h3 {
+    font-size: 30px !important;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .left {
+    width: 75% !important;
+  }
+  .hero .left h1 {
+    margin-bottom: 5px !important;
+  }
+  .hero .left p {
+    margin-bottom: 15px !important;
+  }
+  .hero .right {
+    width: 75% !important;
+  }
+  .hero .right .rec {
+    display: none;
+  }
+  .hero .right .war {
+    display: block !important;
+  }
+  .blob {
+    left: -280px !important;
+  }
+  .blob2 {
+    display: block !important;
+  }
+  .container {
+    margin-top: 3rem;
+    max-width: var(--tabWidth);
+  }
+  .container .overlay {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .container .burger {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .container .links {
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    background-color: var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 95;
+    -webkit-box-shadow: var(--shadowOne);
+            box-shadow: var(--shadowOne);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .container .links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 50%;
+    width: 100%;
+  }
+  .container .links ul li {
+    padding: 0 !important;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+  }
+  .container .links ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0 !important;
+    width: 100%;
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  .container .links ul li a .over {
+    display: none !important;
+  }
+  .container .links ul li .is_active {
+    font-weight: 600;
+    font-size: 12.5px;
+    color: var(--anchor) !important;
+  }
+  .container .links ul li .CNA {
+    margin-top: 50px;
+    background-color: var(--anchor) !important;
+    color: var(--primary) !important;
+  }
+}
+/*# sourceMappingURL=style.main.tab.css.map */
