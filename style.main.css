@@ -24,6 +24,8 @@
   /*SHADOWS*/
   --shadowOne: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   --shadowTwo: 0px 40px 33px -20px rgba(0, 0, 0, 0.19);
+  --shadowThree: 10px 25px 44px 5px rgba(0, 0, 0, 0.05);
+  --shadowFour: 10px 25px 44px 5px rgba(8, 127, 139, 0.5);
   /*CONTAINER WIDTHS*/
   --deskWidth: 83rem;
   --tabWidth: 65rem;
@@ -415,6 +417,43 @@ section.one .blob2 {
   background-color: var(--anchor);
 }
 
+.middle .mid-button {
+  margin-top: 50px;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  color: var(--primary);
+  border: 1px dashed var(--primary);
+  padding: 18px 26px;
+  cursor: pointer;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.middle .mid-button i {
+  margin-left: 10px;
+}
+
+.middle .mid-button:hover {
+  padding: 18px 26px;
+  border: 1px dashed var(--altPrimaryDark);
+  padding: 18px 26px;
+  background: var(--altPrimaryDark);
+  color: var(--anchor);
+  -webkit-box-shadow: var(--shadowOne);
+          box-shadow: var(--shadowOne);
+}
+
+.middle .mid-button:hover i {
+  -webkit-animation: L-R 0.5s alternate ease-in-out infinite;
+          animation: L-R 0.5s alternate ease-in-out infinite;
+}
+
 .middle .top_wv {
   width: 100%;
 }
@@ -441,6 +480,7 @@ section.one .blob2 {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 0;
+  margin-bottom: 150px;
 }
 
 .middle .mid .container .left {
@@ -495,41 +535,67 @@ section.one .blob2 {
           box-shadow: var(--shadowOne);
 }
 
-.middle .mid .container .left button {
-  margin-top: 50px;
-  outline: 0;
-  border: 0;
-  background: transparent;
+.middle .mid .container .rev_left {
+  width: 40%;
+  height: 100%;
+  padding: 50px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.middle .mid .container .rev_left .line_top {
+  height: 3px;
+  width: 30px;
+  background: var(--gold);
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.middle .mid .container .rev_left h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--altPrimaryDark);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.middle .mid .container .rev_left .sub-title {
+  font-family: "Lato", sans-serif;
   color: var(--primary);
-  border: 1px dashed var(--primary);
-  padding: 18px 26px;
-  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
   text-transform: capitalize;
-  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
+.middle .mid .container .rev_left .txt {
+  margin-top: 60px;
+  color: var(--primary);
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  -webkit-transition: .4s;
-  transition: .4s;
+  line-height: 28px;
 }
 
-.middle .mid .container .left button i {
-  margin-left: 10px;
-}
-
-.middle .mid .container .left button:hover {
-  padding: 18px 26px;
+.middle .mid .container .rev_left .txt span {
+  margin: 0px 2px;
+  font-weight: 800;
+  color: var(--gold);
+  padding: 3px;
   border: 1px dashed var(--altPrimaryDark);
-  padding: 18px 26px;
   background: var(--altPrimaryDark);
   color: var(--anchor);
   -webkit-box-shadow: var(--shadowOne);
           box-shadow: var(--shadowOne);
-}
-
-.middle .mid .container .left button:hover i {
-  -webkit-animation: L-R 0.5s alternate ease-in-out infinite;
-          animation: L-R 0.5s alternate ease-in-out infinite;
 }
 
 .middle .mid .container .right {
@@ -555,6 +621,178 @@ section.one .blob2 {
 .middle .mid .container .right img {
   width: 100%;
   height: auto;
+}
+
+.middle .mid .container .features {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle .mid .container .features h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--altPrimaryDark);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.middle .mid .container .features .sub-title {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.middle .mid .container .features .line_top {
+  height: 3px;
+  width: 30px;
+  background: var(--gold);
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.middle .mid .container .features .f_row {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.middle .mid .container .features .f_row .f_col {
+  width: 290px;
+  height: 350px;
+  margin: 0 25px;
+  border-radius: 10px;
+  padding: 35px;
+  overflow: hidden;
+  -webkit-box-shadow: var(--shadowThree);
+          box-shadow: var(--shadowThree);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.middle .mid .container .features .f_row .f_col h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.middle .mid .container .features .f_row .f_col p {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.middle .mid .container .features .f_row .f_col img {
+  margin-top: 25px;
+  width: 100px;
+}
+
+.middle .mid .container .features .f_row .f_col .line {
+  margin-top: 100px;
+  height: 2px;
+  width: 30px;
+  background: var(--gold);
+  border-radius: 5px;
+}
+
+.middle .mid .container .features .f_row .f_col a {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.middle .mid .container .features .f_row .f_col a i {
+  margin-left: 5px;
+  font-size: 10px;
+  -webkit-animation: L-R 0.5s alternate ease-in-out infinite;
+          animation: L-R 0.5s alternate ease-in-out infinite;
+}
+
+.middle .mid .container .features .f_row .f_col:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: var(--shadowFour);
+          box-shadow: var(--shadowFour);
+  background: var(--primary);
+}
+
+.middle .mid .container .features .f_row .f_col:hover h4 {
+  color: var(--altPrimaryDark);
+}
+
+.middle .mid .container .features .f_row .f_col:hover a {
+  color: var(--altPrimaryDark);
+}
+
+.middle .mid .container .features .f_row .f_active {
+  background: var(--altPrimaryDark);
+  -webkit-box-shadow: var(--shadowFour);
+          box-shadow: var(--shadowFour);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  width: 290px;
+  height: 340px;
+  margin: 0 25px;
+  border-radius: 10px;
+  padding: 35px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.middle .mid .container .features .f_row .f_active h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.middle .mid .container .features .f_row .f_active img {
+  margin-top: 25px;
+  wid: 120px;
+  margin-bottom: 30px;
 }
 
 .middle .bottom_wv {
