@@ -691,8 +691,14 @@ section.one {
                         box-shadow: var(--shadowThree);
                         display: flex;
                         flex-direction: column;
+                        justify-content: space-between;
+                        cursor: url("./img/svg/PLUS_SQR_BLUE.svg"), default;
                         // align-items: center;
                         transition: .4s;
+
+                        .f_col_top {
+                            // background: var(--gold);
+                        }
 
                         h4 {
                             font-family: "Poppins", sans-serif;
@@ -704,22 +710,23 @@ section.one {
                         }
 
                         p {
-                            margin-top: 10px;
+                            // margin-top: 50px;
                             font-family: "Poppins", sans-serif;
-                            color: var(--primary);
+                            color: var(--anchor);
                             font-size: 10px;
-                            font-weight: 500;
+                            font-weight: 700;
                             text-transform: capitalize;
                         }
 
                         img {
                             margin-top: 25px;
-                            width: 100px;
+                            height: 100px;
                             // text-align: center;
                         }
 
                         .line {
-                            margin-top: 100px;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
                             height: 2px;
                             width: 30px;
                             background: var(--gold);
@@ -747,6 +754,7 @@ section.one {
                         transform: translateY(-5px);
                         box-shadow: var(--shadowFour);
                         background: var(--primary);
+
                         // border: 2px dashed var(--altPrimaryDark);
 
                         h4 {
@@ -763,27 +771,63 @@ section.one {
                         box-shadow: var(--shadowFour);
                         transform: translateY(-5px);
                         width: 290px;
-                        height: 340px;
+                        height: 360px;
                         margin: 0 25px;
                         border-radius: 10px;
                         padding: 35px;
                         overflow: hidden;
                         display: flex;
                         flex-direction: column;
+                        justify-content: space-between;
 
 
                         h4 {
                             font-family: "Poppins", sans-serif;
-                            color: var(--primary);
                             font-size: 15px;
-                            font-weight: 500;
+                            text-transform: capitalize;
+                            font-weight: 800;
+                            color: var(--gold);
+                        }
+
+                        p {
+                            // margin-top: 50px;
+                            font-family: "Poppins", sans-serif;
+                            color: var(--primary);
+                            font-size: 10px;
+                            font-weight: 700;
                             text-transform: capitalize;
                         }
 
                         img {
                             margin-top: 25px;
-                            wid: 120px;
+                            height: 100px;
                             margin-bottom: 30px;
+                        }
+
+                        .line {
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            height: 2px;
+                            width: 30px;
+                            background: var(--gold);
+                            border-radius: 5px;
+                        }
+
+                        a {
+                            margin-top: 10px;
+                            font-family: "Poppins", sans-serif;
+                            color: var(--primary);
+                            font-weight: 500;
+                            font-size: 12px;
+                            text-decoration: none;
+                            text-transform: capitalize;
+
+                            i {
+                                color: var(--gold);
+                                margin-left: 5px;
+                                font-size: 10px;
+                                animation: L-R 0.5s alternate ease-in-out infinite;
+                            }
                         }
 
                     }
